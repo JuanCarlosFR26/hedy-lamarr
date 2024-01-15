@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    background: #888;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100vw;
+}
+
+#header {
+    background: #222;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 12px;
+    height: 170px;
+}
+
+#header img {
+    width: 40px;
+}
+
+
+#header .title_container {
+    color: #fff;
+    display: flex;
+    line-height: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+#header .title_container h2 {
+    font-size: 32px;
+    color: #888;
+    margin-left: 66px;
+}
+
+#header .title_container h1 {
+    font-size: 7.5em;
+    margin-bottom: -16px;
+    font-weight: 900;
+    margin-left: 60px;
+}
+
+#header .space {
+    color: #fff;
+    font-size: 10px;
+    margin-left: 180px;
+}
+
+
+.nav_container {
+    background: #fff;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+}
+
+.nav_container p {
+    font-size: 22px;
+    color: #6f2828;
+    font-weight: 900;
+}
+
+.nav_container ul {
+    width: 70%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav_container ul li {
+    width: 80%;
+}
+
+.nav_container ul li a {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav_container ul li a img {
+    width: 25px;
+}
+
+.nav_container ul li a span {
+    font-size: 10px;
+    color: #777;
+    font-weight: 700;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.expo_section {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.expo_section .img_container_expo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.expo_section .img_container_expo .expo_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    gap: 6px;
+}
+
+.expo_section .img_container_expo .expo_img img {
+    width: 100%;
+}
+
+.expo_section .img_container_expo .expo_img blockquote {
+    font-size: 7px;
+    color: #6f2828;
+    font-weight: 900;
+}
+
+.expo_section article {
+    padding: 12px;
+    width: 95%;
+}
+
+.expo_section article h3 {
+    font-size: 24px;
+    color: #6f2828;
+}
+
+.expo_section article p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.expo_section article p .cite {
+    color: #6f2828;
+    font-weight: 700;
+}
+
+footer {
+    background: #a1a1a1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .text_footer a {
+    color: #000;
+    font-weight: 800;
+}
+
+footer .text_footer .tlf {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+footer .text_footer .mini_text p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer img {
+    width: 80px;
+}
+
+/*  EL MITO  */
+.nav_page ul {
+    width: 80%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.expo_section_mito {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.expo_section_mito .container_mito {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.expo_section_mito .container_mito h2 {
+    font-size: 26px;
+    color: #6f2828;
+    font-weight: 600;
+}
+
+.expo_section_mito .container_mito p {
+    font-size: 14px;
+}
+
+.expo_section_mito .container_mito p span {
+    font-weight: 600;
+}
+
+.expo_section_mito .container_mito .img_container_mito {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.expo_section_mito .container_mito .img_container_mito img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.expo_section_mito .container_mito .img_container_mito  blockquote {
+    font-size: 8px;
+    color: #6f2828;
+    font-weight: 900;
+}
+
+/* VIDA Y TRABAJO */
+.expo_section_vida {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expo_section_vida h2 {
+    color: #6f2828;
+}
+
+.expo_section_vida .container_vida {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.expo_section_vida .container_vida .text_vida {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.expo_section_vida .container_vida .text_vida .subtext_vida {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.expo_section_vida .container_vida .text_vida .subtext_vida p {
+    font-size: 22px;
+}
+
+.expo_section_vida .container_vida .text_vida .subtext_vida p span {
+    font-weight: 600;
+}
+
+.expo_section_vida .container_vida .text_vida .img_container_vida {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+}
+
+.expo_section_vida .container_vida .text_vida .img_container_vida img {
+    width: 100%;
+}
+
+.expo_section_vida .container_vida .text_vida .img_container_vida blockquote {
+    font-size: 8px;
+    color: #6f2828;
+    font-weight: 900;
+}
+
+/*  SISTEMA  */
+.expo_section_sistema {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expo_section_sistema .container_sistema {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.expo_section_sistema .container_sistema .sistema_img {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.expo_section_sistema .container_sistema .sistema_img img {
+    width: 100%;
+}
+
+.expo_section_sistema .container_sistema .sistema_img blockquote {
+    font-size: 7px;
+    color: #6f2828;
+    font-weight: 900;
+}
+
+.expo_section_sistema .container_sistema .first_column h2 {
+    color: #6f2828;
+    font-size: 20px;
+
+}
+
+.expo_section_sistema .container_sistema .first_column p {
+    font-size: 19.5px;
+}
+
+.expo_section_sistema .container_sistema .first_column p span {
+    font-weight: 600;
+}
+
+.expo_section_sistema .container_sistema p {
+    font-size: 19.5px;
+}
+
+.expo_section_sistema .container_sistema p span {
+    font-weight: 600;
+}
+
+/*  RECONOCIMIENTO  */
+.expo_section_reconocimiento {
+    background: #641c34;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 60px;
+}
+
+.expo_section_reconocimiento h2 {
+    color: #888;
+    font-weight: 800;
+}
+
+.expo_section_reconocimiento p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.expo_section_reconocimiento p span {
+    font-weight: 600;
+}
+
+.banner_postumo {
+    width: 100%;
+    margin-bottom: -10px;
+}
